@@ -10,31 +10,37 @@
   <body>
     <div class="bg-indigo-lighter">
       <div class="container mx-auto px-6 py-24">
-        <h1 class="font-display font-semibold text-black text-5xl mb-4">
+        <h1 class="font-display font-semibold text-black text-5xl">
           Hello welcome
         </h1>
       </div>
     </div>
-    <section class="container mx-auto px-6 py-12">
-      <h2 class="font-display font-semibold text-black text-3xl">
+    <section class="container mx-auto px-6 py-12 mb-16">
+      <h2 class="font-display font-semibold text-indigo-darkest text-3xl">
         a little about me,
       </h2>
-      <p class="font-display text-black py-3 leading-normal">
+      <p
+        class="font-display text-indigo-darker py-3 leading-normal lg:text-2xl md:text-2xl mb-4"
+      >
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
         sollicitudin ligula ac mauris dictum, vel scelerisque magna efficitur.
         Sed rutrum, nisl sit amet consectetur varius, augue libero pharetra
         nisl, sit amet vulputate libero quam sed urna. Fusce ex ipsum, imperdiet
         vitae lacus ut, cursus pretium felis.
       </p>
+      <!-- <div class="bg-indigo-lighter w-32 h-1"></div> -->
     </section>
-    <section class="container mx-auto px-6 py-18">
-      <h2 class="font-display font-semibold text-black text-3xl mb-6">
+    <section class="container mx-auto px-6 py-18 mb-16">
+      <h2 class="font-display font-semibold text-black text-3xl text-center mb-4">
         Projects
       </h2>
-
-      <div class="flex lg:flex-row md:flex-col sm:flex-col lg:justify-between xs:flex-col flex-col">
-
-        <div class="max-w-sm rounded overflow-hidden shadow-lg mb-6 lg:mx-12">
+      <div class="bg-indigo-lighter w-32 h-1 mb-12 mx-auto"></div>
+      <div
+        class="flex lg:flex-row md:flex-col sm:flex-col lg:justify-between md:items-center xs:flex-col flex-col"
+      >
+        <div
+          class="max-w-sm rounded overflow-hidden shadow-lg trans mb-6 lg:mx-12 border-b-8"
+        >
           <img class="w-full" src="assets/impzone.png" alt="forum thumbnail" />
           <div class="px-6 py-4">
             <div class="font-bold text-xl mb-2">[forum name]</div>
@@ -65,7 +71,11 @@
         </div>
 
         <div class="max-w-sm rounded overflow-hidden shadow-lg mb-6 lg:mx-12">
-          <img class="w-full" src="assets/appointmentcrop.png" alt="forum thumbnail" />
+          <img
+            class="w-full"
+            src="assets/appointmentcrop.png"
+            alt="forum thumbnail"
+          />
           <div class="px-6 py-4">
             <div class="font-bold text-xl mb-2">Appointment Booker</div>
             <p class="text-grey-darker text-base">
@@ -76,7 +86,7 @@
           </div>
           <div class="px-6 py-4">
             <span
-              class="inline-block bg-grey-lighter rounded-full px-3 py-1 mt-1 mb-1 text-sm font-semibold text-grey-d"
+              class="inline-block bg-grey-lighter rounded-full px-3 py-1 mt-1 mb-1 text-sm font-semibold text-grey-darker"
               >React</span
             >
             <span
@@ -88,9 +98,13 @@
               >MongoDB</span
             >
           </div>
-
         </div>
       </div>
+    </section>
+    <section class="container mx-auto px-6 py-18">
+      <h2 class="font-display font-semibold text-black text-3xl mb-6">
+        Technologies
+      </h2>
     </section>
   </body>
 </html>
