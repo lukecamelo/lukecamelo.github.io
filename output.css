@@ -6,6 +6,10 @@
   transition: all .25s;
 }
 
+.light-gray-bg {
+  background-color: #f6f9fc;
+}
+
 /* =============== THESE ARE MY OWN TWEAKS PLZ DON'T BREAK =============== */
 
 /* Document
