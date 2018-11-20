@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>luke camelo</title>
   </head>
-  <body>
+  <body class="font-sans">
     <div class="bg-indigo-lighter">
       <div class="container mx-auto px-6 py-24">
         <h1
@@ -26,11 +26,11 @@
       </div>
     </div>
     <section class="container mx-auto px-6 py-12 mb-16">
-      <h2 class="font-display font-semibold text-indigo-darkest text-3xl">
-        a little about me,
-      </h2>
+      <h2 class="font-serif font-light text-black text-3xl about-header">
+        a little about me 
+      </h2><span class="blinking-cursor text-4xl text-indigo font-medium ml-1">_</span>
       <p
-        class="font-display text-indigo-darker py-3 leading-normal lg:text-2xl md:text-2xl mb-4"
+        class="font-display text-grey-darkest py-3 leading-normal lg:text-2xl md:text-2xl mb-4"
       >
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
         sollicitudin ligula ac mauris dictum, vel scelerisque magna efficitur.
@@ -42,7 +42,7 @@
     </section>
     <section class="container mx-auto px-6 py-18 mb-16">
       <h2
-        class="font-display font-semibold text-black text-3xl text-center mb-4"
+        class="font-serif font-semibold text-black text-3xl text-center mb-4"
       >
         Projects
       </h2>
@@ -56,7 +56,7 @@
         >
           <img class="w-full" src="assets/impzone.png" alt="forum thumbnail" />
           <div class="px-6 py-4">
-            <div class="font-bold text-xl mb-2">[forum name]</div>
+            <div class="text-2xl mb-2 font-serif font-light">[forum name]</div>
             <p class="text-grey-darker text-base leading-normal">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               Voluptatibus quia, nulla! Maiores et perferendis eaque,
@@ -88,7 +88,7 @@
         >
           <img class="w-full" src="assets/impzone.png" alt="forum thumbnail" />
           <div class="px-6 py-4">
-            <div class="font-bold text-xl mb-2">[forum name]</div>
+            <div class="text-2xl mb-2 font-serif font-light">[forum name]</div>
             <p class="text-grey-darker text-base leading-normal">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               Voluptatibus quia, nulla! Maiores et perferendis eaque,
@@ -125,7 +125,7 @@
             alt="forum thumbnail"
           />
           <div class="px-6 py-4">
-            <div class="font-bold text-xl mb-2">Appointment Booker</div>
+            <div class="text-2xl mb-2 font-serif font-light">Appointment Booker</div>
             <p class="text-grey-darker text-base leading-normal">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               Voluptatibus quia, nulla! Maiores et perferendis eaque,
@@ -157,7 +157,7 @@
             alt="forum thumbnail"
           />
           <div class="px-6 py-4">
-            <div class="font-bold text-xl mb-2">Appointment Booker</div>
+            <div class="text-2xl mb-2 font-serif font-light">Appointment Booker</div>
             <p class="text-grey-darker text-base leading-normal">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               Voluptatibus quia, nulla! Maiores et perferendis eaque,
@@ -183,22 +183,24 @@
     </section>
     <section class="container mx-auto px-6 py-18">
       <h2
-        class="font-display font-semibold text-indigo-darkest text-3xl mb-4 text-center"
+        class="font-serif font-semibold text-indigo-darkest text-3xl mb-4 text-center"
       >
         Technologies
       </h2>
 
       <div class="bg-indigo-lighter w-32 h-1 mb-12 mx-auto"></div>
-      <div>
+      <div data-aos="fade-up">
         <div class="text-center mb-16">
-          <h1 class="pb-4 text-grey-darkest tech-header">Languages</h1>
+          <h1 class="pb-4 text-grey-darkest tech-header font-light">Languages</h1>
           <div
             class="flex lg:flex-row md:flex-row sm:flex-col flex-col sm:items-center md:flex-wrap lg:flex-no-wrap justify-center"
           >
-            <i class="fas fa-chevron-left fa-6x text-indigo-lighter icon-show"></i>
+            <i
+              class="fas fa-chevron-left fa-6x text-indigo-lighter icon-show"
+              data-aos="fade-right"
+            ></i>
             <div
               class="max-w-sm rounded overflow-hidden shadow-lg trans lg:mx-3 md:mx-6 border-b-8 text-center mb-6 w-48"
-              data-aos="fade-up"
             >
               <div class="px-6 py-4">
                 <p style="color: #20232a;" class="pb-2">JavaScript</p>
@@ -208,7 +210,6 @@
 
             <div
               class="max-w-sm rounded overflow-hidden shadow-lg trans lg:mx-3 md:mx-6 border-b-8 text-center mb-6 w-48"
-              data-aos="fade-down"
             >
               <div class="px-6 py-4">
                 <p style="color: #20232a;" class="pb-2">HTML5</p>
@@ -218,7 +219,6 @@
 
             <div
               class="max-w-sm rounded overflow-hidden shadow-lg trans lg:mx-3 md:mx-6 border-b-8 text-center mb-6 w-48"
-              data-aos="fade-up"
             >
               <div class="px-6 py-4">
                 <p style="color: #20232a;" class="pb-2">CSS</p>
@@ -228,7 +228,6 @@
 
             <div
               class="max-w-sm rounded overflow-hidden shadow-lg trans lg:mx-3 md:mx-6 border-b-8 text-center mb-6 w-48"
-              data-aos="fade-down"
             >
               <div class="px-6 py-4">
                 <p style="color: #20232a;" class="pb-2">ReactJS</p>
@@ -238,14 +237,16 @@
 
             <div
               class="max-w-sm rounded overflow-hidden shadow-lg trans lg:mx-3 md:mx-6 border-b-8 text-center mb-6 w-48"
-              data-aos="fade-up"
             >
               <div class="px-6 py-4">
                 <p style="color: #20232a;" class="pb-2">Node</p>
                 <i class="fab fa-node-js fa-6x" style="color: #6cc24a;"></i>
               </div>
             </div>
-            <i class="fas fa-chevron-right fa-6x text-indigo-lighter icon-show"></i>
+            <i
+              class="fas fa-chevron-right fa-6x text-indigo-lighter icon-show"
+              data-aos="fade-left"
+            ></i>
           </div>
         </div>
       </div>
