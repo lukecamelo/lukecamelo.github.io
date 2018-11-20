@@ -10,6 +10,16 @@
   background-color: #f6f9fc;
 }
 
+@media screen and (max-width: 992px) {
+  .icon-show {
+    display: none !important;
+  }
+
+  .tech-header {
+    margin-bottom: 2rem;
+  }
+}
+
 /* =============== THESE ARE MY OWN TWEAKS PLZ DON'T BREAK =============== */
 
 /* Document
