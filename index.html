@@ -5,12 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="output.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>luke camelo</title>
   </head>
   <body>
     <div class="bg-indigo-lighter">
       <div class="container mx-auto px-6 py-24">
-        <h1 class="font-display font-semibold text-black text-5xl">
+        <h1 class="font-display font-semibold text-black text-5xl" data-aos="fade-right">
           Hello welcome
         </h1>
       </div>
@@ -38,15 +45,48 @@
       </h2>
       <div class="bg-indigo-lighter w-32 h-1 mb-12 mx-auto"></div>
       <div
-        class="flex lg:flex-row md:flex-col sm:flex-col lg:justify-between md:items-center xs:flex-col flex-col"
+        class="flex flex-wrap lg:flex-row md:flex-col lg:items-center md:justify-center xs:flex-col flex-col"
       >
         <div
           class="max-w-sm rounded overflow-hidden shadow-lg trans mb-6 lg:mx-12 border-b-8"
+          data-aos="fade-right"
         >
           <img class="w-full" src="assets/impzone.png" alt="forum thumbnail" />
           <div class="px-6 py-4">
             <div class="font-bold text-xl mb-2">[forum name]</div>
-            <p class="text-grey-darker text-base">
+            <p class="text-grey-darker text-base leading-normal">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Voluptatibus quia, nulla! Maiores et perferendis eaque,
+              exercitationem praesentium nihil.
+            </p>
+          </div>
+          <div class="px-6 py-4">
+            <span
+              class="inline-block bg-grey-lighter rounded-full px-3 py-1 mt-1 mb-1 text-sm font-semibold text-grey-darker"
+              >React</span
+            >
+            <span
+              class="inline-block bg-grey-lighter rounded-full px-3 py-1 mt-1 mb-1 text-sm font-semibold text-grey-darker"
+              >Redux</span
+            >
+            <span
+              class="inline-block bg-grey-lighter rounded-full px-3 py-1 mt-1 mb-1 text-sm font-semibold text-grey-darker"
+              >Node</span
+            >
+            <span
+              class="inline-block bg-grey-lighter rounded-full px-3 py-1 mt-1 mb-1 text-sm font-semibold text-grey-darker"
+              >PostgreSQL</span
+            >
+          </div>
+        </div>
+        <div
+          class="max-w-sm rounded overflow-hidden shadow-lg trans mb-6 lg:mx-12 border-b-8"
+          data-aos="fade-left"
+        >
+          <img class="w-full" src="assets/impzone.png" alt="forum thumbnail" />
+          <div class="px-6 py-4">
+            <div class="font-bold text-xl mb-2">[forum name]</div>
+            <p class="text-grey-darker text-base leading-normal">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               Voluptatibus quia, nulla! Maiores et perferendis eaque,
               exercitationem praesentium nihil.
@@ -74,6 +114,7 @@
 
         <div
           class="max-w-sm rounded overflow-hidden shadow-lg mb-6 lg:mx-12 border-b-8"
+          data-aos="fade-right"
         >
           <img
             class="w-full"
@@ -82,7 +123,39 @@
           />
           <div class="px-6 py-4">
             <div class="font-bold text-xl mb-2">Appointment Booker</div>
-            <p class="text-grey-darker text-base">
+            <p class="text-grey-darker text-base leading-normal">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Voluptatibus quia, nulla! Maiores et perferendis eaque,
+              exercitationem praesentium nihil.
+            </p>
+          </div>
+          <div class="px-6 py-4">
+            <span
+              class="inline-block bg-grey-lighter rounded-full px-3 py-1 mt-1 mb-1 text-sm font-semibold text-grey-darker"
+              >React</span
+            >
+            <span
+              class="inline-block bg-grey-lighter rounded-full px-3 py-1 mt-1 mb-1 text-sm font-semibold text-grey-darker"
+              >Node</span
+            >
+            <span
+              class="inline-block bg-grey-lighter rounded-full px-3 py-1 mt-1 mb-1 text-sm font-semibold text-grey-darker"
+              >MongoDB</span
+            >
+          </div>
+        </div>
+        <div
+          class="max-w-sm rounded overflow-hidden shadow-lg mb-6 lg:mx-12 border-b-8"
+          data-aos="fade-left"
+        >
+          <img
+            class="w-full"
+            src="assets/appointmentcrop.png"
+            alt="forum thumbnail"
+          />
+          <div class="px-6 py-4">
+            <div class="font-bold text-xl mb-2">Appointment Booker</div>
+            <p class="text-grey-darker text-base leading-normal">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               Voluptatibus quia, nulla! Maiores et perferendis eaque,
               exercitationem praesentium nihil.
@@ -106,19 +179,24 @@
       </div>
     </section>
     <section class="container mx-auto px-6 py-18">
-      <h2 class="font-display font-semibold text-indigo-darkest text-3xl mb-6 text-center">
+      <h2
+        class="font-display font-semibold text-indigo-darkest text-3xl mb-4 text-center"
+      >
         Technologies
       </h2>
       <div class="bg-indigo-lighter w-32 h-1 mb-12 mx-auto"></div>
-      <div class="flex lg:flex-row md:flex-col sm:flex-col flex-col sm:items-center">
+      <div
+        class="flex lg:flex-row md:flex-col sm:flex-col flex-col sm:items-center"
+      >
         <div
           class="max-w-sm rounded overflow-hidden shadow-lg trans mb-6 lg:mx-3 border-b-8"
+          data-aos="fade-right"
         >
           <div class="px-6 py-4">
             <div class="font-bold text-xl text-indigo-darkest mb-2">
-              JavaScript
+              <h3>Javascript</h2>
             </div>
-            <p class="text-indigo-darker text-base">
+            <p class="text-indigo-darker text-base leading-normal">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               Voluptatibus quia, nulla! Maiores et perferendis eaque,
               exercitationem praesentium nihil.
@@ -127,12 +205,13 @@
         </div>
         <div
           class="max-w-sm rounded overflow-hidden shadow-lg trans mb-6 lg:mx-3 border-b-8"
+          data-aos="fade-left"
         >
           <div class="px-6 py-4">
             <div class="font-bold text-xl text-indigo-darkest mb-2">
-              JavaScript
+              <h3>ReactJS</h3>
             </div>
-            <p class="text-indigo-darker text-base">
+            <p class="text-indigo-darker text-base leading-normal">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               Voluptatibus quia, nulla! Maiores et perferendis eaque,
               exercitationem praesentium nihil.
@@ -141,12 +220,13 @@
         </div>
         <div
           class="max-w-sm rounded overflow-hidden shadow-lg trans mb-6 lg:mx-3 border-b-8"
+          data-aos="fade-right"
         >
           <div class="px-6 py-4">
             <div class="font-bold text-xl text-indigo-darkest mb-2">
-              JavaScript
+              <h3>NodeJS</h3>
             </div>
-            <p class="text-indigo-darker text-base">
+            <p class="text-indigo-darker text-base leading-normal">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               Voluptatibus quia, nulla! Maiores et perferendis eaque,
               exercitationem praesentium nihil.
@@ -155,5 +235,12 @@
         </div>
       </div>
     </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        // duration: 600,
+        once: true
+      });
+    </script>
   </body>
 </html>
