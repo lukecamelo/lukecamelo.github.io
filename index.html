@@ -16,350 +16,389 @@
     <title>luke camelo</title>
   </head>
   <body class="font-sans">
-    
-    <!-- <nav class="px-12 pt-6" data-aos="fade-left">
-      <div class="flex md:hidden px-3 py-3 justify-end self-start flex-row">
-        <a href="" id="menu-button"><i id="menu-icon" class="fas fa-ellipsis-h fa-3x text-indigo" style="height: 100%;"></i></a>
-      </div>
-      <div id="menu-items" class="hidden flex-col items-end md:justify-end md:flex md:flex-row trans">
-        <a
-          class="px-3 py-3 mx-3 uppercase tracking-wide no-underline hover:underline text-indigo-light trans"
-          href=""
-          >about</a
-        >
-        <a
-          class="px-3 py-3 mx-3 uppercase tracking-wide no-underline hover:underline text-indigo-light trans"
-          href=""
-          >work</a
-        >
-        <a
-          class="px-3 py-3 mx-3 uppercase tracking-wide no-underline hover:underline text-indigo-light trans"
-          href=""
-          >contact</a
-        >
-      </div>
-    </nav> -->
-    
-    <nav id="menu">
-      <header>
-        <div class="flex items-center flex-col justify-center">
+    <nav id="menu" class="md:hidden">
+      <header class="md:hidden">
+        <div id="menu-links" class="flex items-center flex-col justify-center">
           <h1 class="py-6 text-indigo-lightest">navigation</h1>
           <a
-            class="px-4 py-4 mx-3 uppercase tracking-wide no-underline text-xl hover:underline text-indigo-lightest trans"
+            class="link px-4 py-4 mx-3 uppercase tracking-wide no-underline text-xl hover:underline text-indigo-lightest trans"
             href=""
           >
             about
           </a>
           <a
-            class="px-4 py-4 mx-3 uppercase tracking-wide no-underline text-xl hover:underline text-indigo-lightest trans"
-            href=""
+            class="link px-4 py-4 mx-3 uppercase tracking-wide no-underline text-xl hover:underline text-indigo-lightest trans"
+            href="#work"
           >
             work
           </a>
           <a
-            class="px-4 py-4 mx-3 uppercase tracking-wide no-underline text-xl hover:underline text-indigo-lightest trans"
-            href=""
-          >
-            contact
-          </a>
-        </div>
-        <div class="flex flex-row justify-end py6">
-          <a
-            class="px-3 py-3 mx-3 uppercase tracking-wide no-underline hover:underline text-indigo-light trans"
-            href=""
-          >
-            about
-          </a>
-          <a
-            class="px-3 py-3 mx-3 uppercase tracking-wide no-underline hover:underline text-indigo-light trans"
-            href=""
-          >
-            work
-          </a>
-          <a
-            class="px-3 py-3 mx-3 uppercase tracking-wide no-underline hover:underline text-indigo-light trans"
-            href=""
+            class="link px-4 py-4 mx-3 uppercase tracking-wide no-underline text-xl hover:underline text-indigo-lightest trans"
+            href="#contact"
           >
             contact
           </a>
         </div>
       </header>
     </nav>
-      
-    <main id="panel">
-      <header class="px-12 py-3 flex justify-end bg-indigo-lightest">
-        <button class="toggle-button"><i class="fas fa-ellipsis-h fa-4x text-indigo"></i></button>
-      </header>
-    
 
-    <div class="text-center">
-      <div class="container mx-auto px-6 pt-12 sm:py-24">
-        <h1
-          class="font-display font-bold text-indigo-darker sm:text-6xl text-3xl"
-          data-aos="fade-down"
-        >
-          Let's build something dude.
-        </h1>
-      </div>
-    </div>
-    <section
-      class="container mx-auto px-6 py-12 mb-16"
-      data-aos="fade-right"
-      data-aos-easing="ease-out-sine"
-      data-aos-duration="350"
+    <div
+      class="hidden md:flex flex-row justify-end py-6 px-6 bg-indigo-lightest"
     >
-      <h2 class="font-serif font-light text-black text-3xl about-header">
-        a little about me
-      </h2>
-      <span class="blinking-cursor text-4xl text-indigo font-semibold ml-1"
-        >_</span
+      <a
+        class="px-3 py-3 mx-3 uppercase tracking-wide no-underline hover:underline font-semibold text-indigo-light trans"
+        href=""
       >
-      <p
-        class="font-display text-grey-darkest py-3 leading-normal lg:text-2xl md:text-2xl mb-4"
+        about
+      </a>
+      <a
+        class="px-3 py-3 mx-3 uppercase tracking-wide no-underline hover:underline font-semibold text-indigo-light trans"
+        href="#work"
       >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-        sollicitudin ligula ac mauris dictum, vel scelerisque magna efficitur.
-        Sed rutrum, nisl sit amet consectetur varius, augue libero pharetra
-        nisl, sit amet vulputate libero quam sed urna. Fusce ex ipsum, imperdiet
-        vitae lacus ut, cursus pretium felis.
-      </p>
-    </section>
-    <section class="container mx-auto px-6 py-18 mb-16">
-      <h2 class="font-serif font-semibold text-black text-3xl text-center mb-4">
-        Projects
-      </h2>
-      <div class="bg-indigo-lighter w-32 h-1 mb-12 mx-auto"></div>
-      <div
-        class="flex flex-wrap lg:flex-row md:flex-col lg:items-center md:justify-center sm:items-center xs:flex-col flex-col"
+        work
+      </a>
+      <a
+        class="px-3 py-3 mx-3 uppercase tracking-wide no-underline hover:underline font-semibold text-indigo-light trans"
+        href="#contact"
       >
-        <div
-          class="max-w-sm rounded overflow-hidden shadow-lg trans mb-6 lg:mx-12 border-b-8 bg-white"
-          data-aos="fade-right"
-        >
-          <img class="w-full" src="assets/impzone.png" alt="forum thumbnail" />
-          <div class="px-6 py-4">
-            <div class="text-2xl mb-2 font-serif font-light">[forum name]</div>
-            <p class="text-grey-darker text-base leading-normal">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Voluptatibus quia, nulla! Maiores et perferendis eaque,
-              exercitationem praesentium nihil.
-            </p>
-          </div>
-          <div class="px-6 py-4">
-            <span
-              class="inline-block bg-grey-lighter rounded-full px-3 py-1 mt-1 mb-1 text-sm font-semibold text-grey-darker"
-              >React</span
-            >
-            <span
-              class="inline-block bg-grey-lighter rounded-full px-3 py-1 mt-1 mb-1 text-sm font-semibold text-grey-darker"
-              >Redux</span
-            >
-            <span
-              class="inline-block bg-grey-lighter rounded-full px-3 py-1 mt-1 mb-1 text-sm font-semibold text-grey-darker"
-              >Node</span
-            >
-            <span
-              class="inline-block bg-grey-lighter rounded-full px-3 py-1 mt-1 mb-1 text-sm font-semibold text-grey-darker"
-              >PostgreSQL</span
-            >
-          </div>
-        </div>
-        <div
-          class="max-w-sm rounded overflow-hidden shadow-lg trans mb-6 lg:mx-12 border-b-8 bg-white"
-          data-aos="fade-left"
-        >
-          <img class="w-full" src="assets/impzone.png" alt="forum thumbnail" />
-          <div class="px-6 py-4">
-            <div class="text-2xl mb-2 font-serif font-light">[forum name]</div>
-            <p class="text-grey-darker text-base leading-normal">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Voluptatibus quia, nulla! Maiores et perferendis eaque,
-              exercitationem praesentium nihil.
-            </p>
-          </div>
-          <div class="px-6 py-4">
-            <span
-              class="inline-block bg-grey-lighter rounded-full px-3 py-1 mt-1 mb-1 text-sm font-semibold text-grey-darker"
-              >React</span
-            >
-            <span
-              class="inline-block bg-grey-lighter rounded-full px-3 py-1 mt-1 mb-1 text-sm font-semibold text-grey-darker"
-              >Redux</span
-            >
-            <span
-              class="inline-block bg-grey-lighter rounded-full px-3 py-1 mt-1 mb-1 text-sm font-semibold text-grey-darker"
-              >Node</span
-            >
-            <span
-              class="inline-block bg-grey-lighter rounded-full px-3 py-1 mt-1 mb-1 text-sm font-semibold text-grey-darker"
-              >PostgreSQL</span
-            >
-          </div>
-        </div>
+        contact
+      </a>
+    </div>
 
-        <div
-          class="max-w-sm rounded overflow-hidden shadow-lg mb-6 lg:mx-12 border-b-8 bg-white"
-          data-aos="fade-right"
-        >
-          <img
-            class="w-full"
-            src="assets/appointmentcrop.png"
-            alt="forum thumbnail"
-          />
-          <div class="px-6 py-4">
-            <div class="text-2xl mb-2 font-serif font-light">
-              Appointment Booker
-            </div>
-            <p class="text-grey-darker text-base leading-normal">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Voluptatibus quia, nulla! Maiores et perferendis eaque,
-              exercitationem praesentium nihil.
-            </p>
-          </div>
-          <div class="px-6 py-4">
-            <span
-              class="inline-block bg-grey-lighter rounded-full px-3 py-1 mt-1 mb-1 text-sm font-semibold text-grey-darker"
-              >React</span
-            >
-            <span
-              class="inline-block bg-grey-lighter rounded-full px-3 py-1 mt-1 mb-1 text-sm font-semibold text-grey-darker"
-              >Node</span
-            >
-            <span
-              class="inline-block bg-grey-lighter rounded-full px-3 py-1 mt-1 mb-1 text-sm font-semibold text-grey-darker"
-              >MongoDB</span
-            >
-          </div>
-        </div>
-        <div
-          class="max-w-sm rounded overflow-hidden shadow-lg mb-6 lg:mx-12 border-b-8 bg-white"
-          data-aos="fade-left"
-        >
-          <img
-            class="w-full"
-            src="assets/appointmentcrop.png"
-            alt="forum thumbnail"
-          />
-          <div class="px-6 py-4">
-            <div class="text-2xl mb-2 font-serif font-light">
-              Appointment Booker
-            </div>
-            <p class="text-grey-darker text-base leading-normal">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Voluptatibus quia, nulla! Maiores et perferendis eaque,
-              exercitationem praesentium nihil.
-            </p>
-          </div>
-          <div class="px-6 py-4">
-            <span
-              class="inline-block bg-grey-lighter rounded-full px-3 py-1 mt-1 mb-1 text-sm font-semibold text-grey-darker"
-              >React</span
-            >
-            <span
-              class="inline-block bg-grey-lighter rounded-full px-3 py-1 mt-1 mb-1 text-sm font-semibold text-grey-darker"
-              >Node</span
-            >
-            <span
-              class="inline-block bg-grey-lighter rounded-full px-3 py-1 mt-1 mb-1 text-sm font-semibold text-grey-darker"
-              >MongoDB</span
-            >
-          </div>
+    <main id="panel">
+      <header class="px-12 py-3 flex justify-end bg-indigo-lightest md:hidden">
+        <button class="toggle-button">
+          <i class="fas fa-ellipsis-h fa-4x text-indigo"></i>
+        </button>
+      </header>
+
+      <div class="text-center">
+        <div class="container mx-auto px-6 pt-12 pb-6 sm:py-24">
+          <h1
+            class="font-display font-bold text-indigo-darker sm:text-6xl text-3xl"
+            data-aos="fade-down"
+          >
+            Let's build something dude.
+          </h1>
         </div>
       </div>
-    </section>
-    <div class="technologies-section">
-      <section class="container mx-auto px-6 py-18 pb-24 technologies-section">
-        <h2
-          class="font-serif font-semibold text-indigo-darkest text-3xl mb-4 text-center"
-        >
-          Technologies
+      <section
+        class="container mx-auto px-6 pt-6 md:py-12 mb-16"
+        data-aos="fade-right"
+        data-aos-easing="ease-out-sine"
+        data-aos-duration="350"
+      >
+        <h2 class="font-serif font-light text-black text-3xl about-header">
+          a little about me
         </h2>
-
-        <div class="bg-indigo-lighter w-32 h-1 mb-12 mx-auto"></div>
-        <div data-aos="fade-up">
-          <div class="text-center mb-16">
-            <h1 class="pb-4 text-grey-darkest tech-header font-light">
-              Languages
-            </h1>
-            <div
-              class="flex lg:flex-row md:flex-row sm:flex-col flex-col md:flex-wrap lg:flex-no-wrap items-center md:justify-center"
-            >
-              <i
-                class="fas fa-chevron-left fa-5x text-indigo-lighter icon-show"
-                data-aos="fade-right"
-              ></i>
-              <div
-                class="max-w-sm rounded overflow-hidden shadow-md md:shadow-lg trans lg:mx-3 lg:mb-0 md:mx-6 mb-6 border-b-8 bg-white text-center w-32"
-              >
-                <div class="px-6 py-4">
-                  <p style="color: #20232a;" class="pb-2">JavaScript</p>
-                  <i class="fab fa-js-square fa-5x" style="color: #f7df1e;"></i>
-                </div>
-              </div>
-
-              <div
-                class="max-w-sm rounded overflow-hidden shadow-md md:shadow-lg trans lg:mx-3 lg:mb-0 md:mx-6 mb-6 border-b-8 bg-white text-center w-32"
-              >
-                <div class="px-6 py-4">
-                  <p style="color: #20232a;" class="pb-2">HTML5</p>
-                  <i class="fab fa-html5 fa-5x" style="color: #e34f26;"></i>
-                </div>
-              </div>
-
-              <div
-                class="max-w-sm rounded overflow-hidden shadow-md md:shadow-lg trans lg:mx-3 lg:mb-0 md:mx-6 mb-6 border-b-8 bg-white text-center w-32"
-              >
-                <div class="px-6 py-4">
-                  <p style="color: #20232a;" class="pb-2">CSS</p>
-                  <i class="fab fa-css3 fa-5x" style="color: #179AEB;"></i>
-                </div>
-              </div>
-
-              <div
-                class="max-w-sm rounded overflow-hidden shadow-md md:shadow-lg trans lg:mx-3 lg:mb-0 md:mx-6 mb-6 border-b-8 bg-white text-center w-32"
-              >
-                <div class="px-6 py-4">
-                  <p style="color: #20232a;" class="pb-2">ReactJS</p>
-                  <i class="fab fa-react fa-5x" style="color: #00d8ff"></i>
-                </div>
-              </div>
-
-              <div
-                class="max-w-sm rounded overflow-hidden shadow-md md:shadow-lg trans lg:mx-3 lg:mb-0 md:mx-6 mb-6 border-b-8 bg-white text-center w-32"
-              >
-                <div class="px-6 py-4">
-                  <p style="color: #20232a;" class="pb-2">Node</p>
-                  <i class="fab fa-node-js fa-5x" style="color: #6cc24a;"></i>
-                </div>
-              </div>
-              <i
-                class="fas fa-chevron-right fa-5x text-indigo-lighter icon-show"
-                data-aos="fade-left"
-              ></i>
-            </div>
-          </div>
-          <!-- <div>
-            <div
-              class="max-w-md mx-auto flex justify-center border-b-8 rounded shadow-md bg-white overflow-hidden px-6 py-6"
-            >
-              <div class="text-center px-4">
-                <p>Node</p>
-                <i class="fab fa-node-js fa-3x" style="color: #6cc24a;"></i>
-              </div>
-              <div class="text-center px-4">
-                <p>Node</p>
-                <i class="fab fa-node-js fa-3x" style="color: #6cc24a;"></i>
-              </div>
-              <div class="text-center px-4">
-                <p>Node</p>
-                <i class="fab fa-node-js fa-3x" style="color: #6cc24a;"></i>
-              </div>
-            </div>
-          </div>
-        </div> -->
+        <span class="blinking-cursor text-4xl text-indigo font-semibold ml-1"
+          >_</span
+        >
+        <p
+          class="font-display text-grey-darkest py-3 leading-normal lg:text-2xl md:text-2xl mb-4"
+        >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+          sollicitudin ligula ac mauris dictum, vel scelerisque magna efficitur.
+          Sed rutrum, nisl sit amet consectetur varius, augue libero pharetra
+          nisl, sit amet vulputate libero quam sed urna. Fusce ex ipsum,
+          imperdiet vitae lacus ut, cursus pretium felis.
+        </p>
       </section>
-    </div>
-  </main>
+      <section id="work" class="container mx-auto px-6 py-18 mb-16">
+        <h2
+          class="font-serif font-semibold text-black text-3xl text-center mb-4"
+        >
+          Projects
+        </h2>
+        <div class="bg-indigo-lighter w-32 h-1 mb-12 mx-auto"></div>
+        <div
+          class="flex flex-wrap lg:flex-row md:flex-col lg:items-center md:justify-center sm:items-center xs:flex-col flex-col"
+        >
+          <div
+            class="max-w-sm rounded overflow-hidden shadow-lg trans mb-6 lg:mx-12 border-b-8 bg-white"
+            data-aos="fade-right"
+          >
+            <img
+              class="w-full"
+              src="assets/impzone.png"
+              alt="forum thumbnail"
+            />
+            <div class="px-6 py-4">
+              <div class="text-2xl mb-2 font-serif font-light">
+                [forum name]
+              </div>
+              <p class="text-grey-darker text-base leading-normal">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Voluptatibus quia, nulla! Maiores et perferendis eaque,
+                exercitationem praesentium nihil.
+              </p>
+            </div>
+            <div class="px-6 py-4">
+              <span
+                class="inline-block bg-grey-lighter rounded-full px-3 py-1 mt-1 mb-1 text-sm font-semibold text-grey-darker"
+                >React</span
+              >
+              <span
+                class="inline-block bg-grey-lighter rounded-full px-3 py-1 mt-1 mb-1 text-sm font-semibold text-grey-darker"
+                >Redux</span
+              >
+              <span
+                class="inline-block bg-grey-lighter rounded-full px-3 py-1 mt-1 mb-1 text-sm font-semibold text-grey-darker"
+                >Node</span
+              >
+              <span
+                class="inline-block bg-grey-lighter rounded-full px-3 py-1 mt-1 mb-1 text-sm font-semibold text-grey-darker"
+                >PostgreSQL</span
+              >
+            </div>
+          </div>
+          <div
+            class="max-w-sm rounded overflow-hidden shadow-lg trans mb-6 lg:mx-12 border-b-8 bg-white"
+            data-aos="fade-left"
+          >
+            <img
+              class="w-full"
+              src="assets/impzone.png"
+              alt="forum thumbnail"
+            />
+            <div class="px-6 py-4">
+              <div class="text-2xl mb-2 font-serif font-light">
+                [forum name]
+              </div>
+              <p class="text-grey-darker text-base leading-normal">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Voluptatibus quia, nulla! Maiores et perferendis eaque,
+                exercitationem praesentium nihil.
+              </p>
+            </div>
+            <div class="px-6 py-4">
+              <span
+                class="inline-block bg-grey-lighter rounded-full px-3 py-1 mt-1 mb-1 text-sm font-semibold text-grey-darker"
+                >React</span
+              >
+              <span
+                class="inline-block bg-grey-lighter rounded-full px-3 py-1 mt-1 mb-1 text-sm font-semibold text-grey-darker"
+                >Redux</span
+              >
+              <span
+                class="inline-block bg-grey-lighter rounded-full px-3 py-1 mt-1 mb-1 text-sm font-semibold text-grey-darker"
+                >Node</span
+              >
+              <span
+                class="inline-block bg-grey-lighter rounded-full px-3 py-1 mt-1 mb-1 text-sm font-semibold text-grey-darker"
+                >PostgreSQL</span
+              >
+            </div>
+          </div>
+
+          <div
+            class="max-w-sm rounded overflow-hidden shadow-lg mb-6 lg:mx-12 border-b-8 bg-white"
+            data-aos="fade-right"
+          >
+            <img
+              class="w-full"
+              src="assets/appointmentcrop.png"
+              alt="forum thumbnail"
+            />
+            <div class="px-6 py-4">
+              <div class="text-2xl mb-2 font-serif font-light">
+                Appointment Booker
+              </div>
+              <p class="text-grey-darker text-base leading-normal">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Voluptatibus quia, nulla! Maiores et perferendis eaque,
+                exercitationem praesentium nihil.
+              </p>
+            </div>
+            <div class="px-6 py-4">
+              <span
+                class="inline-block bg-grey-lighter rounded-full px-3 py-1 mt-1 mb-1 text-sm font-semibold text-grey-darker"
+                >React</span
+              >
+              <span
+                class="inline-block bg-grey-lighter rounded-full px-3 py-1 mt-1 mb-1 text-sm font-semibold text-grey-darker"
+                >Node</span
+              >
+              <span
+                class="inline-block bg-grey-lighter rounded-full px-3 py-1 mt-1 mb-1 text-sm font-semibold text-grey-darker"
+                >MongoDB</span
+              >
+            </div>
+          </div>
+          <div
+            class="max-w-sm rounded overflow-hidden shadow-lg mb-6 lg:mx-12 border-b-8 bg-white"
+            data-aos="fade-left"
+          >
+            <img
+              class="w-full"
+              src="assets/appointmentcrop.png"
+              alt="forum thumbnail"
+            />
+            <div class="px-6 py-4">
+              <div class="text-2xl mb-2 font-serif font-light">
+                Appointment Booker
+              </div>
+              <p class="text-grey-darker text-base leading-normal">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Voluptatibus quia, nulla! Maiores et perferendis eaque,
+                exercitationem praesentium nihil.
+              </p>
+            </div>
+            <div class="px-6 py-4">
+              <span
+                class="inline-block bg-grey-lighter rounded-full px-3 py-1 mt-1 mb-1 text-sm font-semibold text-grey-darker"
+                >React</span
+              >
+              <span
+                class="inline-block bg-grey-lighter rounded-full px-3 py-1 mt-1 mb-1 text-sm font-semibold text-grey-darker"
+                >Node</span
+              >
+              <span
+                class="inline-block bg-grey-lighter rounded-full px-3 py-1 mt-1 mb-1 text-sm font-semibold text-grey-darker"
+                >MongoDB</span
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="technologies-section">
+        <section
+          class="container mx-auto px-6 py-18 pb-24 technologies-section"
+        >
+          <h2
+            class="font-serif font-semibold text-indigo-darkest text-3xl mb-4 text-center"
+          >
+            Technologies
+          </h2>
+
+          <div class="bg-indigo-lighter w-32 h-1 mb-12 mx-auto"></div>
+          <div data-aos="fade-up">
+            <div class="text-center mb-16">
+              <h1 class="pb-4 text-grey-darkest tech-header font-light">
+                Languages
+              </h1>
+              <div
+                class="flex lg:flex-row md:flex-row sm:flex-col flex-col md:flex-wrap lg:flex-no-wrap items-center md:justify-center"
+              >
+                <i
+                  class="fas fa-chevron-left fa-5x text-indigo-lighter icon-show"
+                  data-aos="fade-right"
+                ></i>
+                <div
+                  class="max-w-sm rounded overflow-hidden shadow-md md:shadow-lg trans lg:mx-3 lg:mb-0 md:mx-6 mb-6 border-b-8 bg-white text-center w-48"
+                >
+                  <div class="px-6 py-4 flex flex-col items-center">
+                    <p style="color: #20232a;" class="pb-2">JavaScript</p>
+                    <i
+                      class="fab fa-js-square fa-5x"
+                      style="color: #f7df1e;"
+                    ></i>
+                    <div class="rating">
+                      <i class="fas fa-star text-gold"></i
+                      ><i class="fas fa-star text-gold"></i
+                      ><i class="fas fa-star text-gold"></i
+                      ><i class="fas fa-star text-gold"></i
+                      ><i class="fas fa-star text-gold"></i>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="max-w-sm rounded overflow-hidden shadow-md md:shadow-lg trans lg:mx-3 lg:mb-0 md:mx-6 mb-6 border-b-8 bg-white text-center w-32"
+                >
+                  <div class="px-6 py-4">
+                    <p style="color: #20232a;" class="pb-2">HTML5</p>
+                    <i class="fab fa-html5 fa-5x" style="color: #e34f26;"></i>
+                  </div>
+                </div>
+
+                <div
+                  class="max-w-sm rounded overflow-hidden shadow-md md:shadow-lg trans lg:mx-3 lg:mb-0 md:mx-6 mb-6 border-b-8 bg-white text-center w-32"
+                >
+                  <div class="px-6 py-4">
+                    <p style="color: #20232a;" class="pb-2">CSS</p>
+                    <i class="fab fa-css3 fa-5x" style="color: #179AEB;"></i>
+                  </div>
+                </div>
+
+                <div
+                  class="max-w-sm rounded overflow-hidden shadow-md md:shadow-lg trans lg:mx-3 lg:mb-0 md:mx-6 mb-6 border-b-8 bg-white text-center w-32"
+                >
+                  <div class="px-6 py-4">
+                    <p style="color: #20232a;" class="pb-2">ReactJS</p>
+                    <i class="fab fa-react fa-5x" style="color: #00d8ff"></i>
+                  </div>
+                </div>
+
+                <div
+                  class="max-w-sm rounded overflow-hidden shadow-md md:shadow-lg trans lg:mx-3 lg:mb-0 md:mx-6 mb-6 border-b-8 bg-white text-center w-48"
+                >
+                  <div class="px-6 py-4 flex flex-col items-center">
+                    <p style="color: #20232a;" class="pb-2">Node</p>
+                    <i
+                      class="fab fa-node-js fa-5x pb-3"
+                      style="color: #6cc24a;"
+                    ></i>
+                    <div class="rating">
+                      <i class="fas fa-star text-gold"></i
+                      ><i class="fas fa-star text-gold"></i
+                      ><i class="fas fa-star text-gold"></i>
+                      <i class="fas fa-star-half-alt text-gold"></i>
+                      <i class="far fa-star text-gold"></i>
+                    </div>
+                  </div>
+                </div>
+                <i
+                  class="fas fa-chevron-right fa-5x text-indigo-lighter icon-show"
+                  data-aos="fade-left"
+                ></i>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <section class="contact-section">
+        <div id="contact" class="container mx-auto px-6 py-12">
+          <h1
+            class="pb-4 text-grey-darkest contact-header font-light text-center"
+          >
+            Get in touch
+          </h1>
+          <p class="text-center text-grey-darkest mb-6 w-3/5 mx-auto">
+            Whether you need a simple brochure site or a rich web app, I'm your
+            guy. Let's talk!
+          </p>
+          <div class="bg-indigo-lighter w-32 h-1 mb-12 mx-auto"></div>
+          <form
+            class="flex shadow-md container items-center flex-col px-8 py-6 bg-white border-2 border-indigo-lightest max-w-sm mx-auto"
+          >
+            <input
+              type="text"
+              class="shadow trans appearance-none border-2 w-full border-grey-lighter focus:outline-none focus:bg-white focus:border-indigo rounded py-2 px-3 my-2 text-grey-darker leading-tight"
+              placeholder="Your name"
+            />
+            <input
+              type="text"
+              class="shadow trans appearance-none border-2 w-full border-grey-lighter focus:outline-none focus:bg-white focus:border-indigo rounded py-2 px-3 my-2 text-grey-darker leading-tight"
+              placeholder="Subject"
+            />
+            <textarea
+              name="message-body"
+              cols="30"
+              rows="10"
+              placeholder="Talk to me!"
+              class="shadow appearance-none border-2 w-full border-grey-lighter trans focus:outline-none focus:bg-white focus:border-indigo rounded py-2 px-3 my-2 text-grey-darker leading-normal"
+            ></textarea>
+            <button
+              type="submit"
+              class="shadow rounded border-2 border-indigo-light bg-indigo-dark text-white py-2 px-3"
+            >
+              Submit
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="node_modules/slideout/dist/slideout.min.js"></script>
     <script src="index.js"></script>
@@ -367,16 +406,23 @@
       AOS.init({
         once: true
       })
-      var slideout = new Slideout({
-        'panel': document.getElementById('panel'),
-        'menu': document.getElementById('menu'),
-        'padding': 256,
-        'tolerance': 70,
-        'side': 'right'
-      });
-      document.querySelector('.toggle-button').addEventListener('click', function() {
-        slideout.toggle();
-      });
+      let slideout = new Slideout({
+        panel: document.getElementById('panel'),
+        menu: document.getElementById('menu'),
+        padding: 256,
+        tolerance: 70,
+        side: 'right'
+      })
+      document
+        .querySelector('.toggle-button')
+        .addEventListener('click', function() {
+          slideout.toggle()
+        })
+      document.querySelectorAll('.link').forEach(function(link) {
+        link.addEventListener('click', function() {
+          slideout.close()
+        })
+      })
     </script>
   </body>
 </html>

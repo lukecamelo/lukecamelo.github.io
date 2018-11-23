@@ -43,7 +43,7 @@
   position: absolute;
   z-index: -1;
   width: 100%;
-  height: 100%;
+  height: 90%;
   top: 0;
   left: 0;
   right: 0;
@@ -53,6 +53,26 @@
 }
 
 .technologies-section {
+  width: 100%;
+  position: relative;
+  background: #f6f9fc;
+}
+
+/* .contact-section::after {
+  content: '';
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transform: skewY(-12deg);
+  transform-origin: 0%;
+  background: #fff;
+} */
+
+.contact-section {
   width: 100%;
   position: relative;
   background: #f6f9fc;
@@ -83,6 +103,7 @@
 }
 
 /* ===== nav stuff ===== */
+
 .slideout-menu {
   position: fixed;
   top: 0;
@@ -124,12 +145,8 @@
 
 /* MEDIA QUERIES TO HIDE SLIDEOUT MENU */
 
-@media screen and (min-width: 768px) {
-  .slideout-menu {
-    display: block;
+/* @media screen and (min-width: 768px) {
+  .slideout-panel {
+    margin-left: 256px;
   }
-
-  .toggle-button {
-    display: none;
-  }
-}
+} */
