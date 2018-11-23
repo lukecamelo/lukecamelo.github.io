@@ -19,5 +19,7 @@
   "devDependencies": {
     "tailwindcss": "^0.7.2"
   },
-  "dependencies": {}
+  "dependencies": {
+    "slideout": "^1.0.1"
+  }
 }

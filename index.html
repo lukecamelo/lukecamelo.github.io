@@ -17,7 +17,7 @@
   </head>
   <body class="font-sans">
     
-    <nav class="px-12 pt-6" data-aos="fade-left">
+    <!-- <nav class="px-12 pt-6" data-aos="fade-left">
       <div class="flex md:hidden px-3 py-3 justify-end self-start flex-row">
         <a href="" id="menu-button"><i id="menu-icon" class="fas fa-ellipsis-h fa-3x text-indigo" style="height: 100%;"></i></a>
       </div>
@@ -38,12 +38,64 @@
           >contact</a
         >
       </div>
-    </nav>
+    </nav> -->
     
+    <nav id="menu">
+      <header>
+        <div class="flex items-center flex-col justify-center">
+          <h1 class="py-6 text-indigo-lightest">navigation</h1>
+          <a
+            class="px-4 py-4 mx-3 uppercase tracking-wide no-underline text-xl hover:underline text-indigo-lightest trans"
+            href=""
+          >
+            about
+          </a>
+          <a
+            class="px-4 py-4 mx-3 uppercase tracking-wide no-underline text-xl hover:underline text-indigo-lightest trans"
+            href=""
+          >
+            work
+          </a>
+          <a
+            class="px-4 py-4 mx-3 uppercase tracking-wide no-underline text-xl hover:underline text-indigo-lightest trans"
+            href=""
+          >
+            contact
+          </a>
+        </div>
+        <div class="flex flex-row justify-end py6">
+          <a
+            class="px-3 py-3 mx-3 uppercase tracking-wide no-underline hover:underline text-indigo-light trans"
+            href=""
+          >
+            about
+          </a>
+          <a
+            class="px-3 py-3 mx-3 uppercase tracking-wide no-underline hover:underline text-indigo-light trans"
+            href=""
+          >
+            work
+          </a>
+          <a
+            class="px-3 py-3 mx-3 uppercase tracking-wide no-underline hover:underline text-indigo-light trans"
+            href=""
+          >
+            contact
+          </a>
+        </div>
+      </header>
+    </nav>
+      
+    <main id="panel">
+      <header class="px-12 py-3 flex justify-end bg-indigo-lightest">
+        <button class="toggle-button"><i class="fas fa-ellipsis-h fa-4x text-indigo"></i></button>
+      </header>
+    
+
     <div class="text-center">
-      <div class="container mx-auto px-6 py-24">
+      <div class="container mx-auto px-6 pt-12 sm:py-24">
         <h1
-          class="font-display font-bold text-indigo-darker text-6xl"
+          class="font-display font-bold text-indigo-darker sm:text-6xl text-3xl"
           data-aos="fade-down"
         >
           Let's build something dude.
@@ -71,7 +123,6 @@
         nisl, sit amet vulputate libero quam sed urna. Fusce ex ipsum, imperdiet
         vitae lacus ut, cursus pretium felis.
       </p>
-      <div class="bg-indigo-lighter w-32 h-1"></div>
     </section>
     <section class="container mx-auto px-6 py-18 mb-16">
       <h2 class="font-serif font-semibold text-black text-3xl text-center mb-4">
@@ -183,7 +234,6 @@
         <div
           class="max-w-sm rounded overflow-hidden shadow-lg mb-6 lg:mx-12 border-b-8 bg-white"
           data-aos="fade-left"
-          style="z-index: 100;"
         >
           <img
             class="w-full"
@@ -309,13 +359,24 @@
         </div> -->
       </section>
     </div>
+  </main>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="node_modules/slideout/dist/slideout.min.js"></script>
     <script src="index.js"></script>
     <script>
       AOS.init({
-        // duration: 600,
         once: true
       })
+      var slideout = new Slideout({
+        'panel': document.getElementById('panel'),
+        'menu': document.getElementById('menu'),
+        'padding': 256,
+        'tolerance': 70,
+        'side': 'right'
+      });
+      document.querySelector('.toggle-button').addEventListener('click', function() {
+        slideout.toggle();
+      });
     </script>
   </body>
 </html>

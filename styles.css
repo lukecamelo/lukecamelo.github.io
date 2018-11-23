@@ -39,7 +39,7 @@
 }
 
 .technologies-section::after {
-  content: "";
+  content: '';
   position: absolute;
   z-index: -1;
   width: 100%;
@@ -79,5 +79,57 @@
   }
   100% {
     opacity: 1;
+  }
+}
+
+/* ===== nav stuff ===== */
+.slideout-menu {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 256px;
+  min-height: 100vh;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  z-index: 0;
+  display: none;
+  background-image: linear-gradient(145deg, #2f365f, #5661b3);
+}
+
+.slideout-menu-left {
+  left: 0;
+}
+
+.slideout-menu-right {
+  right: 0;
+}
+
+.slideout-panel {
+  position: relative;
+  z-index: 1;
+  will-change: transform;
+  background-color: #fff; /* A background-color is required */
+  min-height: 100vh;
+}
+
+.slideout-open,
+.slideout-open body,
+.slideout-open .slideout-panel {
+  overflow: hidden;
+}
+
+.slideout-open .slideout-menu {
+  display: block;
+}
+
+/* MEDIA QUERIES TO HIDE SLIDEOUT MENU */
+
+@media screen and (min-width: 768px) {
+  .slideout-menu {
+    display: block;
+  }
+
+  .toggle-button {
+    display: none;
   }
 }
