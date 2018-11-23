@@ -38,6 +38,26 @@
   display: inline-block;
 }
 
+.technologies-section::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  transform: skewY(-12deg);
+  transform-origin: 0%;
+  background: #f6f9fc;
+}
+
+.technologies-section {
+  width: 100%;
+  position: relative;
+  background: #f6f9fc;
+}
+
 @-webkit-keyframes blink {
   0% {
     opacity: 1;

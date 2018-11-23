@@ -16,23 +16,30 @@
     <title>luke camelo</title>
   </head>
   <body class="font-sans">
-    <nav class="flex justify-end flex-row px-12 py-6" data-aos="fade-left">
-      <a
-        class="px-3 py-3 mx-3 uppercase tracking-wide no-underline hover:underline text-indigo-light trans"
-        href=""
-        >about</a
-      >
-      <a
-        class="px-3 py-3 mx-3 uppercase tracking-wide no-underline hover:underline text-indigo-light trans"
-        href=""
-        >work</a
-      >
-      <a
-        class="px-3 py-3 mx-3 uppercase tracking-wide no-underline hover:underline text-indigo-light trans"
-        href=""
-        >contact</a
-      >
+    
+    <nav class="px-12 pt-6" data-aos="fade-left">
+      <div class="flex md:hidden px-3 py-3 justify-end self-start flex-row">
+        <a href="" id="menu-button"><i id="menu-icon" class="fas fa-ellipsis-h fa-3x text-indigo" style="height: 100%;"></i></a>
+      </div>
+      <div id="menu-items" class="hidden flex-col items-end md:justify-end md:flex md:flex-row trans">
+        <a
+          class="px-3 py-3 mx-3 uppercase tracking-wide no-underline hover:underline text-indigo-light trans"
+          href=""
+          >about</a
+        >
+        <a
+          class="px-3 py-3 mx-3 uppercase tracking-wide no-underline hover:underline text-indigo-light trans"
+          href=""
+          >work</a
+        >
+        <a
+          class="px-3 py-3 mx-3 uppercase tracking-wide no-underline hover:underline text-indigo-light trans"
+          href=""
+          >contact</a
+        >
+      </div>
     </nav>
+    
     <div class="text-center">
       <div class="container mx-auto px-6 py-24">
         <h1
@@ -75,7 +82,7 @@
         class="flex flex-wrap lg:flex-row md:flex-col lg:items-center md:justify-center sm:items-center xs:flex-col flex-col"
       >
         <div
-          class="max-w-sm rounded overflow-hidden shadow-lg trans mb-6 lg:mx-12 border-b-8"
+          class="max-w-sm rounded overflow-hidden shadow-lg trans mb-6 lg:mx-12 border-b-8 bg-white"
           data-aos="fade-right"
         >
           <img class="w-full" src="assets/impzone.png" alt="forum thumbnail" />
@@ -107,7 +114,7 @@
           </div>
         </div>
         <div
-          class="max-w-sm rounded overflow-hidden shadow-lg trans mb-6 lg:mx-12 border-b-8"
+          class="max-w-sm rounded overflow-hidden shadow-lg trans mb-6 lg:mx-12 border-b-8 bg-white"
           data-aos="fade-left"
         >
           <img class="w-full" src="assets/impzone.png" alt="forum thumbnail" />
@@ -140,7 +147,7 @@
         </div>
 
         <div
-          class="max-w-sm rounded overflow-hidden shadow-lg mb-6 lg:mx-12 border-b-8"
+          class="max-w-sm rounded overflow-hidden shadow-lg mb-6 lg:mx-12 border-b-8 bg-white"
           data-aos="fade-right"
         >
           <img
@@ -174,8 +181,9 @@
           </div>
         </div>
         <div
-          class="max-w-sm rounded overflow-hidden shadow-lg mb-6 lg:mx-12 border-b-8"
+          class="max-w-sm rounded overflow-hidden shadow-lg mb-6 lg:mx-12 border-b-8 bg-white"
           data-aos="fade-left"
+          style="z-index: 100;"
         >
           <img
             class="w-full"
@@ -209,95 +217,100 @@
         </div>
       </div>
     </section>
-    <section class="container mx-auto px-6 py-18">
-      <h2
-        class="font-serif font-semibold text-indigo-darkest text-3xl mb-4 text-center"
-      >
-        Technologies
-      </h2>
+    <div class="technologies-section">
+      <section class="container mx-auto px-6 py-18 pb-24 technologies-section">
+        <h2
+          class="font-serif font-semibold text-indigo-darkest text-3xl mb-4 text-center"
+        >
+          Technologies
+        </h2>
 
-      <div class="bg-indigo-lighter w-32 h-1 mb-12 mx-auto"></div>
-      <div data-aos="fade-up">
-        <div class="text-center mb-16">
-          <h1 class="pb-4 text-grey-darkest tech-header font-light">
-            Languages
-          </h1>
-          <div
-            class="flex lg:flex-row md:flex-row sm:flex-col flex-col xs:items-center md:flex-wrap lg:flex-no-wrap items-center md:justify-center"
-          >
-            <i
-              class="fas fa-chevron-left fa-5x text-indigo-lighter icon-show"
-              data-aos="fade-right"
-            ></i>
+        <div class="bg-indigo-lighter w-32 h-1 mb-12 mx-auto"></div>
+        <div data-aos="fade-up">
+          <div class="text-center mb-16">
+            <h1 class="pb-4 text-grey-darkest tech-header font-light">
+              Languages
+            </h1>
             <div
-              class="max-w-sm rounded overflow-hidden shadow-md md:shadow-lg trans lg:mx-3 lg:mb-0 md:mx-6 mb-6 border-b-8 bg-grey-lightest text-center w-32"
+              class="flex lg:flex-row md:flex-row sm:flex-col flex-col md:flex-wrap lg:flex-no-wrap items-center md:justify-center"
             >
-              <div class="px-6 py-4">
-                <p style="color: #20232a;" class="pb-2">JavaScript</p>
-                <i class="fab fa-js-square fa-5x" style="color: #f7df1e;"></i>
+              <i
+                class="fas fa-chevron-left fa-5x text-indigo-lighter icon-show"
+                data-aos="fade-right"
+              ></i>
+              <div
+                class="max-w-sm rounded overflow-hidden shadow-md md:shadow-lg trans lg:mx-3 lg:mb-0 md:mx-6 mb-6 border-b-8 bg-white text-center w-32"
+              >
+                <div class="px-6 py-4">
+                  <p style="color: #20232a;" class="pb-2">JavaScript</p>
+                  <i class="fab fa-js-square fa-5x" style="color: #f7df1e;"></i>
+                </div>
               </div>
-            </div>
 
-            <div
-              class="max-w-sm rounded overflow-hidden shadow-md md:shadow-lg trans lg:mx-3 lg:mb-0 md:mx-6 mb-6 bg-grey-lightest border-b-8 text-center w-32"
-            >
-              <div class="px-6 py-4">
-                <p style="color: #20232a;" class="pb-2">HTML5</p>
-                <i class="fab fa-html5 fa-5x" style="color: #e34f26;"></i>
+              <div
+                class="max-w-sm rounded overflow-hidden shadow-md md:shadow-lg trans lg:mx-3 lg:mb-0 md:mx-6 mb-6 border-b-8 bg-white text-center w-32"
+              >
+                <div class="px-6 py-4">
+                  <p style="color: #20232a;" class="pb-2">HTML5</p>
+                  <i class="fab fa-html5 fa-5x" style="color: #e34f26;"></i>
+                </div>
               </div>
-            </div>
 
-            <div
-              class="max-w-sm rounded overflow-hidden shadow-md md:shadow-lg trans lg:mx-3 lg:mb-0 md:mx-6 mb-6 bg-grey-lightest border-b-8 text-center w-32"
-            >
-              <div class="px-6 py-4">
-                <p style="color: #20232a;" class="pb-2">CSS</p>
-                <i class="fab fa-css3 fa-5x" style="color: #179AEB;"></i>
+              <div
+                class="max-w-sm rounded overflow-hidden shadow-md md:shadow-lg trans lg:mx-3 lg:mb-0 md:mx-6 mb-6 border-b-8 bg-white text-center w-32"
+              >
+                <div class="px-6 py-4">
+                  <p style="color: #20232a;" class="pb-2">CSS</p>
+                  <i class="fab fa-css3 fa-5x" style="color: #179AEB;"></i>
+                </div>
               </div>
-            </div>
 
-            <div
-              class="max-w-sm rounded overflow-hidden shadow-md md:shadow-lg trans lg:mx-3 lg:mb-0 md:mx-6 mb-6 border-b-8 bg-grey-lightest text-center w-32"
-            >
-              <div class="px-6 py-4">
-                <p style="color: #20232a;" class="pb-2">ReactJS</p>
-                <i class="fab fa-react fa-5x" style="color: #00d8ff"></i>
+              <div
+                class="max-w-sm rounded overflow-hidden shadow-md md:shadow-lg trans lg:mx-3 lg:mb-0 md:mx-6 mb-6 border-b-8 bg-white text-center w-32"
+              >
+                <div class="px-6 py-4">
+                  <p style="color: #20232a;" class="pb-2">ReactJS</p>
+                  <i class="fab fa-react fa-5x" style="color: #00d8ff"></i>
+                </div>
               </div>
-            </div>
 
-            <div
-              class="max-w-sm rounded overflow-hidden shadow-md md:shadow-lg trans lg:mx-3 lg:mb-0 md:mx-6 mb-6 border-b-8 bg-grey-lightest text-center w-32"
-            >
-              <div class="px-6 py-4">
-                <p style="color: #20232a;" class="pb-2">Node</p>
-                <i class="fab fa-node-js fa-5x" style="color: #6cc24a;"></i>
+              <div
+                class="max-w-sm rounded overflow-hidden shadow-md md:shadow-lg trans lg:mx-3 lg:mb-0 md:mx-6 mb-6 border-b-8 bg-white text-center w-32"
+              >
+                <div class="px-6 py-4">
+                  <p style="color: #20232a;" class="pb-2">Node</p>
+                  <i class="fab fa-node-js fa-5x" style="color: #6cc24a;"></i>
+                </div>
               </div>
-            </div>
-            <i
-              class="fas fa-chevron-right fa-5x text-indigo-lighter icon-show"
-              data-aos="fade-left"
-            ></i>
-          </div>
-        </div>
-        <div>
-          <div class="max-w-md mx-auto flex justify-center border-b-8 rounded shadow-md overflow-hidden px-6 py-6">
-            <div class="text-center px-4">
-              <p>Node</p>
-              <i class="fab fa-node-js fa-3x" style="color: #6cc24a;"></i>
-            </div>
-            <div class="text-center px-4">
-              <p>Node</p>
-              <i class="fab fa-node-js fa-3x" style="color: #6cc24a;"></i>
-            </div>
-            <div class="text-center px-4">
-              <p>Node</p>
-              <i class="fab fa-node-js fa-3x" style="color: #6cc24a;"></i>
+              <i
+                class="fas fa-chevron-right fa-5x text-indigo-lighter icon-show"
+                data-aos="fade-left"
+              ></i>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
+          <!-- <div>
+            <div
+              class="max-w-md mx-auto flex justify-center border-b-8 rounded shadow-md bg-white overflow-hidden px-6 py-6"
+            >
+              <div class="text-center px-4">
+                <p>Node</p>
+                <i class="fab fa-node-js fa-3x" style="color: #6cc24a;"></i>
+              </div>
+              <div class="text-center px-4">
+                <p>Node</p>
+                <i class="fab fa-node-js fa-3x" style="color: #6cc24a;"></i>
+              </div>
+              <div class="text-center px-4">
+                <p>Node</p>
+                <i class="fab fa-node-js fa-3x" style="color: #6cc24a;"></i>
+              </div>
+            </div>
+          </div>
+        </div> -->
+      </section>
+    </div>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="index.js"></script>
     <script>
       AOS.init({
         // duration: 600,
