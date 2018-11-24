@@ -9,10 +9,11 @@ const mailer = require('nodemailer').createTransport({
     pass: process.env.GMAIL_PASSWORD
   }
 })
-console.log(mailer.transporter)
 
 module.exports.contact = (event, context, callback) => {
-  let body = querystring.parse(event.body)
+  console.log('event: ', event)
+  console.log('event.body: ', event.body)
+  let body = JSON.parse(event.body)
   mailer.sendMail(
     {
       from: body.from,
@@ -25,4 +26,13 @@ module.exports.contact = (event, context, callback) => {
       callback(null, { statusCode: 200, body: 'Success!' })
     }
   )
+  const response = {
+    statusCode: 200,
+    headers: {
+      'Access-Control-Allow-Origin': '*',
+      'Access-Control-Allow-Credentials': true
+    },
+    body: JSON.stringify({ message: 'Success!' })
+  }
+  callback(null, response)
 }

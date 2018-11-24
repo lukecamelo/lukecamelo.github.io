@@ -14,3 +14,4 @@ functions:
           path: contact
           method: post
           cors: true
+          allowCredentials: true

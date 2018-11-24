@@ -79,7 +79,7 @@
             class="font-display font-bold text-indigo-darker sm:text-6xl text-3xl"
             data-aos="fade-down"
           >
-            i'm luke. let's build something
+            let's build something.
           </h1>
         </div>
       </div>
@@ -399,10 +399,15 @@
           </p>
           <div class="bg-indigo-lighter w-32 h-1 mb-12 mx-auto"></div>
           <form
+            id="contact-form"
             method="POST"
             action="https://1hm7qio1yg.execute-api.us-east-1.amazonaws.com/dev/contact"
             class="flex shadow-md container items-center flex-col px-8 py-6 bg-white border-2 border-indigo-lightest max-w-sm mx-auto"
           >
+            <div
+              id="submit-response"
+              class="text-green pb-4 font-sans font-semibold text-2xl trans"
+            ></div>
             <input
               type="text"
               name="from"
@@ -424,6 +429,7 @@
             ></textarea>
             <div class="submit-container">
               <button
+                id="form-submit"
                 type="submit"
                 class="shadow rounded border-b-2 border-indigo-darkest bg-indigo-dark hover:bg-indigo-darker  text-white py-2 px-6 submit-button"
               >
