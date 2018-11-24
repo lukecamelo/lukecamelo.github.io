@@ -69,11 +69,28 @@
 }
 
 .submit-container:hover .submit-button {
-  transform: translateY(3px);
+  transform: translateY(2px);
 }
 
 .submit-container:hover {
   cursor: pointer;
+}
+
+/* .project-card {
+  height: 550px;
+} */
+
+.icon-container:hover .social-icon {
+  transform: translateY(2px);
+}
+
+.footer-bg {
+  background-color: rgb(146, 142, 151);
+}
+
+.project-card img {
+  height: 335px;
+  width: 100%;
 }
 
 @-webkit-keyframes blink {

@@ -2,3 +2,5 @@
 /assets/old.png
 .DS_Store
 /assets/.DS_Store
+.env
+.serverless

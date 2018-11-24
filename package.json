@@ -20,6 +20,9 @@
     "tailwindcss": "^0.7.2"
   },
   "dependencies": {
+    "dotenv": "^6.1.0",
+    "nodemailer": "^4.7.0",
+    "querystring": "^0.2.0",
     "slideout": "^1.0.1"
   }
 }

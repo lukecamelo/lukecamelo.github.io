@@ -1,0 +1,16 @@
+service: serverless-contact
+app: portfolio
+tenant: lukecamelo
+
+provider:
+  name: aws
+  runtime: nodejs8.10
+
+functions:
+  contact:
+    handler: handler.contact
+    events:
+      - http:
+          path: contact
+          method: post
+          cors: true
