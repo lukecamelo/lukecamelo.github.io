@@ -1,2 +1,4 @@
 /node_modules
 /assets/old.png
+.DS_Store
+/assets/.DS_Store
