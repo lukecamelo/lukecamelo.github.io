@@ -58,24 +58,22 @@
   background: #f6f9fc;
 }
 
-/* .contact-section::after {
-  content: '';
-  position: absolute;
-  z-index: 0;
-  width: 100%;
-  height: 100%;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  transform: skewY(-12deg);
-  transform-origin: 0%;
-  background: #fff;
-} */
-
 .contact-section {
   width: 100%;
   position: relative;
   background: #f6f9fc;
+}
+
+.submit-button {
+  transition: 0.25s;
+}
+
+.submit-container:hover .submit-button {
+  transform: translateY(3px);
+}
+
+.submit-container:hover {
+  cursor: pointer;
 }
 
 @-webkit-keyframes blink {
