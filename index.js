@@ -5,7 +5,7 @@ const submitButton = document.querySelector('#form-submit')
 
 submitButton.blur()
 form.blur()
-responseDiv.blur()
+// responseDiv.blur()
 
 // const about = document.querySelector('#about-nav')
 // const work = document.querySelector('#work-nav')
@@ -33,6 +33,7 @@ form.addEventListener('submit', e => {
   })
     .then(res => res.json())
     .then(json => {
+      console.log(json)
       if (json.message === 'Success!') {
         validate()
         formElements.forEach(field => {
@@ -43,7 +44,7 @@ form.addEventListener('submit', e => {
         submitError()
       }
     })
-    .catch(err => console.log('error sending message: ', err))
+    .catch(err => console.log(err))
 })
 
 // ANIMATED BUTTON STUFF
