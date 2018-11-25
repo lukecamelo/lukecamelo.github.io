@@ -27,18 +27,21 @@
           <h1 class="py-6 text-indigo-lightest">navigation</h1>
           <a
             class="link px-4 py-4 mx-3 uppercase tracking-wide no-underline text-xl hover:underline text-indigo-lightest trans"
-            href=""
+            onclick="smoothScroll('about')"
+            href="#about"
           >
             about
           </a>
           <a
             class="link px-4 py-4 mx-3 uppercase tracking-wide no-underline text-xl hover:underline text-indigo-lightest trans"
+            onclick="smoothScroll('work')"
             href="#work"
           >
             work
           </a>
           <a
             class="link px-4 py-4 mx-3 uppercase tracking-wide no-underline text-xl hover:underline text-indigo-lightest trans"
+            onclick="smoothScroll('contact')"
             href="#contact"
           >
             contact
@@ -52,19 +55,25 @@
     >
       <a
         class="px-3 py-3 mx-3 uppercase tracking-wide no-underline hover:underline font-semibold text-indigo-light trans"
-        href=""
+        href="#about"
+        onclick="smoothScroll('about')"
+        id="about-nav"
       >
         about
       </a>
       <a
         class="px-3 py-3 mx-3 uppercase tracking-wide no-underline hover:underline font-semibold text-indigo-light trans"
         href="#work"
+        id="work-nav"
+        onclick="smoothScroll('work')"
       >
         work
       </a>
       <a
         class="px-3 py-3 mx-3 uppercase tracking-wide no-underline hover:underline font-semibold text-indigo-light trans"
+        onclick="smoothScroll('contact')"
         href="#contact"
+        id="contact-nav"
       >
         contact
       </a>
@@ -124,7 +133,7 @@
             data-aos="fade-right"
           >
             <img
-              class="w-full"
+              class="w-full h-auto"
               src="assets/impzone2.png"
               alt="forum thumbnail"
             />
@@ -162,7 +171,7 @@
             data-aos="fade-right"
           >
             <img
-              class="overflow-hidden"
+              class="w-full h-auto"
               src="assets/appointmentcrop2.png"
               alt="forum thumbnail"
             />
@@ -196,13 +205,25 @@
             data-aos="fade-left"
           >
             <img
-              class="w-full"
+              class="w-full h-auto"
               src="assets/ebieandeleanor.png"
               alt="forum thumbnail"
             />
             <div class="px-6 py-4">
-              <div class="text-2xl mb-2 font-serif font-light">
-                Ebie & Eleanor
+              <div class="text-2xl mb-2 font-serif font-light inline">
+                <p class="inline">Ebie & Eleanor</p>
+                <a
+                  href="https://lukecamelo.github.io/ebie-and-eleanor/"
+                  class="inline text-sm no-underline text-indigo ml-3 hover:underline"
+                >
+                  Live
+                </a>
+                <a
+                  href="https://github.com/lukecamelo/ebie-and-eleanor"
+                  class="inline text-sm no-underline text-indigo ml-3 hover:underline"
+                >
+                  GitHub Repo
+                </a>
               </div>
               <p class="text-grey-darker text-base leading-normal">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -231,7 +252,7 @@
             data-aos="fade-left"
           >
             <img
-              class="w-full"
+              class="w-full h-auto"
               src="assets/oldportfolio.png"
               alt="forum thumbnail"
             />
@@ -402,10 +423,6 @@
             action="https://1hm7qio1yg.execute-api.us-east-1.amazonaws.com/dev/contact"
             class="flex shadow-md container items-center flex-col px-8 py-6 bg-white border-2 border-indigo-lightest max-w-sm mx-auto"
           >
-            <div
-              id="submit-response"
-              class="text-green pb-4 font-sans font-semibold text-2xl trans"
-            ></div>
             <input
               id="from-field"
               type="text"
@@ -433,6 +450,7 @@
                 id="form-submit"
                 type="submit"
                 class="animated-button font-sans"
+                autofocus="false"
               ></button>
             </div>
           </form>
@@ -466,7 +484,8 @@
       </div>
     </footer>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script src="node_modules/slideout/dist/slideout.min.js"></script>
+    <!-- <script src="node_modules/slideout/dist/slideout.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slideout/1.0.1/slideout.min.js"></script>
     <script src="index.js"></script>
     <script>
       AOS.init({
