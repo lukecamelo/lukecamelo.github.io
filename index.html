@@ -409,30 +409,32 @@
               class="text-green pb-4 font-sans font-semibold text-2xl trans"
             ></div>
             <input
+              id="from-field"
               type="text"
               name="from"
               class="shadow trans appearance-none border-2 w-full border-grey-lighter focus:outline-none focus:bg-white focus:border-indigo rounded py-2 px-3 my-2 text-grey-darker leading-tight"
               placeholder="Your name"
             />
             <input
+              id="subject-field"
               type="text"
               name="subject"
               class="shadow trans appearance-none border-2 w-full border-grey-lighter focus:outline-none focus:bg-white focus:border-indigo rounded py-2 px-3 my-2 text-grey-darker leading-tight"
               placeholder="Subject"
             />
             <textarea
+              id="message-field"
               name="message"
               cols="30"
               rows="10"
               placeholder="Talk to me!"
               class="shadow appearance-none border-2 w-full border-grey-lighter trans focus:outline-none focus:bg-white focus:border-indigo rounded py-2 px-3 mt-2 mb-6 text-grey-darker leading-normal"
             ></textarea>
-            <div class="submit-container">
-              <button
-                id="form-submit"
-                type="submit"
+            <div class="animated-container">
+              <!--
                 class="shadow rounded border-b-2 border-indigo-darkest bg-indigo-dark hover:bg-indigo-darker  text-white py-2 px-6 submit-button"
-              >
+              -->
+              <button id="form-submit" type="submit" class="animated-button">
                 Submit
               </button>
             </div>
