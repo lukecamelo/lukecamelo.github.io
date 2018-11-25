@@ -11,14 +11,12 @@ const mailer = require('nodemailer').createTransport({
 })
 
 module.exports.contact = (event, context, callback) => {
-  console.log('event: ', event)
-  console.log('event.body: ', event.body)
   let body = JSON.parse(event.body)
   mailer.sendMail(
     {
       from: body.from,
       to: [CONTACT_ADDRESS],
-      subject: body.subject || '[No subject]',
+      subject: body.from + ' - ' + body.subject || '[No subject]',
       html: body.message || '[No message]'
     },
     function(err, info) {

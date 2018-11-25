@@ -41,12 +41,21 @@ submitButton.addEventListener('click', function() {
 function validate() {
   submitButton.classList.remove('onclic')
   submitButton.classList.add('validate')
-  submitButton.innerHTML = '<i class="fas fa-check text-white"></i>'
 }
 
 function callback() {
   setTimeout(() => {
     submitButton.classList.remove('validate')
-    submitButton.innerHTML = 'Submit'
   }, 1250)
 }
+
+// BUTTON FOCUS STUFF
+
+function handleFirstTab(e) {
+  if (e.keyCode === 9) {
+    document.body.classList.add('user-is-tabbing')
+    window.removeEventListener('keydown', handleFirstTab)
+  }
+}
+
+window.addEventListener('keydown', handleFirstTab)
