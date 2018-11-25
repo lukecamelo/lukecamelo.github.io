@@ -27,6 +27,8 @@ form.addEventListener('submit', e => {
           field.value = ''
         })
         callback()
+      } else {
+        submitError()
       }
     })
     .catch(err => console.log('error sending message: ', err))
@@ -43,9 +45,15 @@ function validate() {
   submitButton.classList.add('validate')
 }
 
+function submitError() {
+  submitButton.classList.remove('onclic')
+  submitButton.classList.add('submit-error')
+}
+
 function callback() {
   setTimeout(() => {
     submitButton.classList.remove('validate')
+    submitButton.classList.remove('submit-error')
   }, 1250)
 }
 

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
 /* ===== removing ugly focus but allowing keyboard users to see it  ===== */
 
 body:not(.user-is-tabbing) button:focus,
@@ -233,9 +235,43 @@ body:not(.user-is-tabbing) textarea:focus {
   -webkit-font-smoothing: antialiased;
 }
 
+.validate:hover {
+  background: #1ecd97;
+  border: 2px solid #1ecd97;
+}
+
 .validate:after {
   font-family: 'FontAwesome';
+  font-size: 1.25em;
   content: '\f00c';
+}
+
+.submit-error {
+  font-size: 13px;
+  color: white;
+  background: #ef5753;
+  border: 2px solid #ef5753;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+.submit-error:hover {
+  background: #ef5753;
+  border: 2px solid #ef5753;
+}
+
+.submit-error:after {
+  font-family: 'FontAwesome';
+  font-size: 1.25em;
+  content: '\f00d';
+}
+
+.validate:before {
+  font-family: Open Sans;
+  content: 'Sent! ';
 }
 
 @keyframes rotating {
