@@ -14,9 +14,9 @@ module.exports.contact = (event, context, callback) => {
   let body = JSON.parse(event.body)
   mailer.sendMail(
     {
-      from: body.from,
+      from: body.name,
       to: [CONTACT_ADDRESS],
-      subject: body.from + ' - ' + body.subject || '[No subject]',
+      subject: body.name + ' - ' + body.subject || '[No subject]',
       html: body.message || '[No message]'
     },
     function(err, info) {

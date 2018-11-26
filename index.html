@@ -96,12 +96,21 @@
       <div class="text-center hero py-24">
         <div class="container mx-auto px-6 pt-12 pb-6 sm:py-24">
           <h1
-            class="font-serif font-bold text-black sm:text-6xl text-5xl"
+            class="font-serif font-bold text-black sm:text-6xl text-5xl mb-2"
             data-aos="fade-down"
           >
             let's <span class="text-indigo">build</span> something dude.
           </h1>
-          <!-- <p data-aos="fade-up">developer / designer / creative</p> -->
+          <p class="text-lg mx-auto w-2/3 sm:w-100" data-aos="fade-up">
+            (and if you're interested, here's my
+            <a
+              class="text-indigo hover:text-indigo-dark"
+              target="_blank"
+              href="https://docs.google.com/document/d/1udWy59ajYAHztwehFdNgPqcoJUATMcix5j48w4EZUJ0/edit?usp=sharing"
+              >resume</a
+            >
+            )
+          </p>
         </div>
       </div>
       <section
@@ -155,11 +164,13 @@
                 <div class="text-indigo-dark text-lg inline font-sans">
                   <a
                     href="https://imp-zone.herokuapp.com"
+                    target="_blank"
                     class="inline-block bg-indigo-lightest rounded-full px-3 py-1 mt-1 mb-1 text-sm font-semibold text-indigo-dark no-underline trans hover:bg-indigo-dark hover:text-indigo-lightest"
                   >
                     Live
                   </a>
                   <a
+                    target="_blank"
                     href="https://github.com/lukecamelo/pern-forum"
                     class="inline-block bg-indigo-lightest rounded-full px-3 py-1 mt-1 mb-1 text-sm font-semibold text-indigo-dark no-underline trans hover:bg-indigo-dark hover:text-indigo-lightest"
                   >
@@ -206,12 +217,14 @@
                 <p class="inline">Appointment Booker</p>
                 <div class="text-indigo-dark text-lg inline font-sans">
                   <a
+                    target="_blank"
                     href="https://damp-shore-12996.herokuapp.com/"
                     class="inline-block bg-indigo-lightest rounded-full px-3 py-1 mt-1 mb-1 text-sm font-semibold text-indigo-dark no-underline trans hover:bg-indigo-dark hover:text-indigo-lightest"
                   >
                     Live
                   </a>
                   <a
+                    target="_blank"
                     href="https://github.com/lukecamelo/appointment-booker"
                     class="inline-block bg-indigo-lightest rounded-full px-3 py-1 mt-1 mb-1 text-sm font-semibold text-indigo-dark no-underline trans hover:bg-indigo-dark hover:text-indigo-lightest"
                   >
@@ -254,12 +267,14 @@
                 <p class="inline">Ebie & Eleanor</p>
                 <div class="text-indigo-dark text-lg inline font-sans">
                   <a
+                    target="_blank"
                     href="https://lukecamelo.github.io/ebie-and-eleanor/"
                     class="inline-block bg-indigo-lightest rounded-full px-3 py-1 mt-1 mb-1 text-sm font-semibold text-indigo-dark no-underline trans hover:bg-indigo-dark hover:text-indigo-lightest"
                   >
                     Live
                   </a>
                   <a
+                    target="_blank"
                     href="https://github.com/lukecamelo/ebie-and-eleanor"
                     class="inline-block bg-indigo-lightest rounded-full px-3 py-1 mt-1 mb-1 text-sm font-semibold text-indigo-dark no-underline trans hover:bg-indigo-dark hover:text-indigo-lightest"
                   >
@@ -303,12 +318,14 @@
                 <p class="inline">Portfolio</p>
                 <div class="text-indigo-dark text-lg inline font-sans">
                   <a
+                    target="_blank"
                     href="https://lukecamelo.github.io/"
                     class="inline-block bg-indigo-lightest rounded-full px-3 py-1 mt-1 mb-1 text-sm font-semibold text-indigo-dark no-underline trans hover:bg-indigo-dark hover:text-indigo-lightest"
                   >
                     Live
                   </a>
                   <a
+                    target="_blank"
                     href="https://github.com/lukecamelo/lukecamelo.github.io/"
                     class="inline-block bg-indigo-lightest rounded-full px-3 py-1 mt-1 mb-1 text-sm font-semibold text-indigo-dark no-underline trans hover:bg-indigo-dark hover:text-indigo-lightest"
                   >
@@ -484,11 +501,11 @@
             class="flex shadow-md container items-center flex-col px-8 py-6 bg-white border-2 border-indigo-lightest max-w-sm mx-auto"
           >
             <input
-              id="from-field"
+              id="name-field"
               type="text"
-              name="from"
+              name="name"
               class="shadow trans appearance-none border-2 w-full border-grey-lighter focus:outline-none focus:bg-white focus:border-indigo rounded py-2 px-3 my-2 text-grey-darker leading-tight"
-              placeholder="Your name"
+              placeholder="Your email address"
             />
             <input
               id="subject-field"
@@ -524,7 +541,11 @@
         </p>
         <div class="inline-block py-2 px-1 flex justify-between">
           <div class="icon-container">
-            <a href="https://www.github.com/lukecamelo" class="no-underline">
+            <a
+              href="https://www.github.com/lukecamelo"
+              class="no-underline"
+              target="_blank"
+            >
               <i
                 class="fab fa-github-alt text-indigo hover:text-indigo-dark fa-2x px-2 social-icon trans"
               ></i>
@@ -532,6 +553,7 @@
           </div>
           <div class="icon-container">
             <a
+              target="_blank"
               href="https://www.linkedin.com/in/luke-camelo-a9853a163/"
               class="no-underline"
             >
@@ -543,8 +565,8 @@
         </div>
       </div>
     </footer>
+
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <!-- <script src="node_modules/slideout/dist/slideout.min.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slideout/1.0.1/slideout.min.js"></script>
     <script src="index.js"></script>
     <script>
