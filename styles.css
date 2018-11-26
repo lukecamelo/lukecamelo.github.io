@@ -18,10 +18,9 @@ body:not(.user-is-tabbing) textarea:focus {
 }
 
 .hero {
-  background: linear-gradient(rgb(230, 232, 255, 0.2), rgb(208, 212, 252, 0.3)),
-    url('assets/wall.jpg');
+  /* background: linear-gradient(rgb(230, 232, 255, 0.2), rgb(208, 212, 252, 0.3)); */
+  background-image: url('assets/wall.jpg');
   background-size: cover;
-  background-attachment: fixed;
 }
 
 .header-shadow-effect-extreme {
