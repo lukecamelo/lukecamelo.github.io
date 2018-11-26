@@ -13,6 +13,17 @@ body:not(.user-is-tabbing) textarea:focus {
   transition: all 0.25s;
 }
 
+.logo {
+  font-family: 'Leckerli One', cursive;
+}
+
+.hero {
+  background: linear-gradient(rgb(230, 232, 255, 0.2), rgb(208, 212, 252, 0.3)),
+    url('assets/wall.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+}
+
 .header-shadow-effect-extreme {
   text-shadow: -2.5px 3px 0px #b2b7ff, -5px 7px 0px #7886d7,
     -7.5px 10px 0px #6574cd;

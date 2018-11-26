@@ -17,6 +17,10 @@
       rel="stylesheet"
       href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css"
     />
+    <link
+      href="https://fonts.googleapis.com/css?family=Leckerli+One"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>luke camelo</title>
   </head>
@@ -51,32 +55,35 @@
     </nav>
 
     <div
-      class="hidden lg:flex flex-row justify-end py-6 px-6 bg-indigo-lightest"
+      class="hidden lg:flex flex-row justify-between py-6 px-6 bg-indigo-lightest"
     >
-      <a
-        class="px-3 py-3 mx-3 uppercase tracking-wide no-underline hover:underline font-semibold text-indigo-light trans"
-        href="#about"
-        onclick="smoothScroll('about')"
-        id="about-nav"
-      >
-        about
-      </a>
-      <a
-        class="px-3 py-3 mx-3 uppercase tracking-wide no-underline hover:underline font-semibold text-indigo-light trans"
-        href="#work"
-        id="work-nav"
-        onclick="smoothScroll('work')"
-      >
-        work
-      </a>
-      <a
-        class="px-3 py-3 mx-3 uppercase tracking-wide no-underline hover:underline font-semibold text-indigo-light trans"
-        onclick="smoothScroll('contact')"
-        href="#contact"
-        id="contact-nav"
-      >
-        contact
-      </a>
+      <div><p class="logo text-indigo text-4xl tracking-wide">luke.</p></div>
+      <div class="flex flex-row items-center">
+        <a
+          class="px-3 py-3 mx-3 uppercase tracking-wide no-underline hover:underline font-semibold text-indigo-light trans"
+          href="#about"
+          onclick="smoothScroll('about')"
+          id="about-nav"
+        >
+          about
+        </a>
+        <a
+          class="px-3 py-3 mx-3 uppercase tracking-wide no-underline hover:underline font-semibold text-indigo-light trans"
+          href="#work"
+          id="work-nav"
+          onclick="smoothScroll('work')"
+        >
+          work
+        </a>
+        <a
+          class="px-3 py-3 mx-3 uppercase tracking-wide no-underline hover:underline font-semibold text-indigo-light trans"
+          onclick="smoothScroll('contact')"
+          href="#contact"
+          id="contact-nav"
+        >
+          contact
+        </a>
+      </div>
     </div>
 
     <main id="panel">
@@ -86,14 +93,15 @@
         </button>
       </header>
 
-      <div class="text-center">
+      <div class="text-center hero py-24">
         <div class="container mx-auto px-6 pt-12 pb-6 sm:py-24">
           <h1
-            class="font-display font-bold text-indigo-darker sm:text-6xl text-3xl"
+            class="font-serif font-bold text-black sm:text-6xl text-4xl"
             data-aos="fade-down"
           >
-            luke, developer
+            luke camelo
           </h1>
+          <p>developer / designer / creative</p>
         </div>
       </div>
       <section
@@ -102,7 +110,7 @@
         data-aos-easing="ease-out-sine"
         data-aos-duration="350"
       >
-        <h2 class="font-serif text-indigo-darkest text-3xl about-header">
+        <h2 class="font-serif text-black text-3xl about-header">
           a little about me
         </h2>
         <span class="blinking-cursor text-4xl text-indigo font-semibold ml-1"
