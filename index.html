@@ -57,7 +57,9 @@
     <div
       class="hidden lg:flex flex-row justify-between py-6 px-6 bg-indigo-lightest"
     >
-      <div><p class="logo text-indigo text-4xl tracking-wide px-3 mx-3">luke.</p></div>
+      <div>
+        <p class="logo text-indigo text-4xl tracking-wide px-3 mx-3">luke.</p>
+      </div>
       <div class="flex flex-row items-center">
         <a
           class="px-3 py-3 mx-3 uppercase tracking-wide no-underline hover:underline font-semibold text-indigo-light trans"
@@ -87,7 +89,10 @@
     </div>
 
     <main id="panel">
-      <header class="px-12 py-3 flex justify-end bg-indigo-lightest lg:hidden">
+      <header
+        class="px-12 py-3 flex justify-between items-center bg-indigo-lightest lg:hidden"
+      >
+        <div><p class="logo text-indigo text-4xl tracking-wide">luke.</p></div>
         <button class="toggle-button">
           <i class="fas fa-ellipsis-h fa-4x text-indigo"></i>
         </button>
@@ -102,14 +107,13 @@
             let's <span class="text-indigo">build</span> something dude.
           </h1>
           <p class="text-lg mx-auto w-2/3 sm:w-100" data-aos="fade-up">
-            (and if you're interested, here's my
+            (and for those in a hurry, here's my
             <a
               class="text-indigo hover:text-indigo-dark"
               target="_blank"
               href="https://docs.google.com/document/d/1udWy59ajYAHztwehFdNgPqcoJUATMcix5j48w4EZUJ0/edit?usp=sharing"
               >resume</a
-            >
-            )
+            >)
           </p>
         </div>
       </div>
@@ -159,7 +163,9 @@
               alt="forum thumbnail"
             />
             <div class="px-6 py-4">
-              <div class="text-2xl mb-2 font-serif font-light">
+              <div
+                class="text-2xl mb-2 font-serif font-light flex flex-col sm:flex-row sm:justify-between"
+              >
                 <p class="inline">[forum name]</p>
                 <div class="text-indigo-dark text-lg inline font-sans">
                   <a
@@ -210,10 +216,12 @@
             <img
               class="w-full h-auto"
               src="assets/appointmentcrop3.png"
-              alt="forum thumbnail"
+              alt="appointment bookerthumbnail"
             />
             <div class="px-6 py-4">
-              <div class="text-2xl mb-2 font-serif font-light">
+              <div
+                class="text-2xl mb-2 font-serif font-light flex flex-col sm:flex-row sm:justify-between"
+              >
                 <p class="inline">Appointment Booker</p>
                 <div class="text-indigo-dark text-lg inline font-sans">
                   <a
@@ -260,10 +268,12 @@
             <img
               class="w-full h-auto"
               src="assets/ebieandeleanor.png"
-              alt="forum thumbnail"
+              alt="ebie and eleanor thumbnail"
             />
             <div class="px-6 py-4">
-              <div class="text-2xl mb-2 font-serif font-light inline">
+              <div
+                class="text-2xl mb-2 font-serif font-light inline flex flex-col sm:flex-row sm:justify-between"
+              >
                 <p class="inline">Ebie & Eleanor</p>
                 <div class="text-indigo-dark text-lg inline font-sans">
                   <a
@@ -311,10 +321,12 @@
             <img
               class="w-full h-auto"
               src="assets/oldportfolio.png"
-              alt="forum thumbnail"
+              alt="portfolio thumbnail"
             />
             <div class="px-6 py-4">
-              <div class="text-2xl mb-2 font-serif font-light">
+              <div
+                class="text-2xl mb-2 font-serif font-light flex flex-col sm:flex-row sm:justify-between"
+              >
                 <p class="inline">Portfolio</p>
                 <div class="text-indigo-dark text-lg inline font-sans">
                   <a
@@ -527,7 +539,6 @@
                 id="form-submit"
                 type="submit"
                 class="animated-button font-sans"
-                autofocus="false"
               ></button>
             </div>
           </form>
